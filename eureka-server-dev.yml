@@ -17,17 +17,15 @@ eureka:
   server:
     waitTimeInMsWhenSyncEmpty: 5
       
-   
-management:
-  tracing:
-    sampling:
-      probability: 1.0
-  zipkin:
-    tracing:
-      endpoint: http://localhost:9411/api/v2/spans
 
 management:
   endpoints:
     web:
       exposure:
         include: health, info, refresh, bus-refresh, prometheus
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
