@@ -17,12 +17,6 @@ eureka:
   server:
     waitTimeInMsWhenSyncEmpty: 5
       
-      
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
    
 management:
   tracing:
